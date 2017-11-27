@@ -16,6 +16,11 @@ public class ItemController {
 	@Autowired
 	private ItemService itemService;
 	
+	/**
+	 * 根据id查询item
+	 * @param itemId
+	 * @return
+	 */
 	@RequestMapping("/item/{itemId}")
 	@ResponseBody
 	public TbItem getItemById(@PathVariable long itemId){
